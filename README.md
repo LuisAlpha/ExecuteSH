@@ -1,0 +1,2 @@
+# ExecuteSH
+Executar pinchis scripts
