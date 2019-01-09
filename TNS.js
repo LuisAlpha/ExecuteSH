@@ -2,7 +2,7 @@ var exec = require('ssh-exec');
 
 var v_host ='172.30.27.9';
 
-exec('/home/Audios/Shells/./test.sh',{
+exec('/home/Audios/Shells/./TNS_ren.sh',{
 user: 'root',
 host: '172.30.27.9',
 password:'4lc0mAdm'
