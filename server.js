@@ -8,13 +8,14 @@ app.use(express.static('public'));
 
 var host_v = '172.30.27.9';
 
-app.listen(8080, () =>{
-	console.log('listening on 8080');
+app.listen(8081, () =>{
+	console.log('listening on 8081');
 });
 
 app.get('/', (req, res)=>{
 	res.sendFile(__dirname + '/index.html');
 });
+
 
 app.post('/TNS', (req, res)=>{
 

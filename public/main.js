@@ -1,8 +1,8 @@
-function DescargarTNS(event){
+function DescargarTNS(){
 	fetch('/TNS',{method:"POST"})
 	.then((response)=>{
 		if(response.ok){
-			Alert('Se Inicio el proceso de TNS');
+			alert('Se Inicio el proceso de TNS');
 			return;
 		}
 		throw new Error('Request Failed.');
@@ -11,11 +11,11 @@ function DescargarTNS(event){
 	});
 }
 
-function DescargarIPSOS(event){
+function DescargarIPSOS(){
 	fetch('/IPSOS',{method:"POST" })
 	.then((response)=>{
 		if(response.ok){
-			Alert('Se inicio el proceso de IPSOS');
+			alert('Se inicio el proceso de IPSOS');
 			return;
 		}
 		throw new Error('Request Failed.');
@@ -23,3 +23,8 @@ function DescargarIPSOS(event){
 		console.error(error);
 	});
 }
+
+setTimeout(function(){
+	DescargarTNS();
+	DescargarIPSOS();
+},1000000);
